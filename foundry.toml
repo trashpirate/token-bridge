@@ -10,17 +10,21 @@ fs_permissions = [{ access = "read", path = "./broadcast" }]
 
 # --chains--
 [rpc_endpoints]
+# Ethereum
 mainnet = "${RPC_MAINNET}"
 sepolia = "${RPC_SEPOLIA}"
 goerli = "${RPC_GOERLI}" 
+# Binance Smart Chain
 bsc = "${RPC_BSC}"
 bsctest = "${RPC_BSC_TEST}"
+# Base Chain
 base = "${RPC_BASE}"
 baseSepolia = "${RPC_BASE_SEPOLIA}"
 baseGoerli = "${RPC_BASE_GOERLI}"
+# Avalanche
 avax = "${RPC_AVAX}"
 avaxTest = "${RPC_AVAX_FUJI}"
-
+# Localhost
 localhost = "${RPC_LOCALHOST}"
 
 # --scans--
@@ -40,6 +44,7 @@ baseGoerli = { key = "${BASESCAN_KEY}", chain = "84531" }
 avax = {key="${SNOWTRACE_KEY}", chain="43114", url='https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan'}
 avaxTest = {key="${SNOWTRACE_KEY}", chain="43113", url='https://api.routescan.io/v2/network/testnet/evm/43113/etherscan'}
 
+# --fuzzing--
 [fuzz]
 runs = 1000
 max_test_rejects=50000

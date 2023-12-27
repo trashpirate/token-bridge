@@ -1,5 +1,5 @@
 {
-    "filter_paths": "lib,src/ERC20Token.sol,src/HoldEarn.sol",
+    "filter_paths": "lib,src/HoldEarn.sol",
     "solc_remaps": [
         "ds-test/=lib/ds-test/src/",
         "forge-std/=lib/forge-std/src/",
